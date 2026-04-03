@@ -99,7 +99,7 @@ export const config = {
         github: "https://github.com/HaRsH00000007",
         linkedin: "https://www.linkedin.com/in/harsh-singh-linkedin",
         twitter: "https://x.com",
-        instagram: "https://www.instagram.com"
+        instagram: "https://www.instagram.com/harsh_0.0.7/"
     },
     skills: {
         develop: {
