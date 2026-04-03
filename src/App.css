@@ -3,11 +3,12 @@
 }
 .title,
 .para {
-  font-kerning: none;
-  -webkit-text-rendering: optimizeSpeed;
-  text-rendering: optimizeSpeed;
+  font-kerning: auto;
+  -webkit-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  word-spacing: 4px;
 }
 @media only screen and (max-width: 1600px) {
   .section-container {

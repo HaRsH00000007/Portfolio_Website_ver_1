@@ -45,6 +45,16 @@
   font-size: 14px;
   letter-spacing: 0.2px;
 }
+.navbar-logo {
+  height: 90px;
+  border-radius: 12px;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+  object-fit: contain;
+}
+.navbar-logo:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 20px rgba(180, 100, 255, 0.5);
+}
 @media only screen and (min-width: 500px) {
   .header {
     padding: 20px 0px;

@@ -135,7 +135,11 @@ export class TextSplitter {
         firstItem.parentNode?.insertBefore(lineWrapper, firstItem);
         line.forEach((item) => {
           if (item.parentNode === lineWrapper.parentNode) {
+            const nextNode = item.nextSibling;
             lineWrapper.appendChild(item);
+            if (nextNode && nextNode.nodeType === Node.TEXT_NODE && nextNode.textContent?.trim() === "") {
+              lineWrapper.appendChild(nextNode);
+            }
           }
         });
       });
